@@ -6,8 +6,8 @@ from tests.test_steps import *
 
 @allure.suite("Github - Issues - Issue Name")
 class TestGithubIssueName:
-    @allure.title("Selene test")
     def test_github_issue_selene_steps(self):
+        allure.dynamic.title("Selene test")
         allure.dynamic.tag("Web Interface")
         allure.dynamic.severity(Severity.NORMAL)
         allure.dynamic.label("owner", "SergeyG")

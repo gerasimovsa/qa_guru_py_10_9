@@ -7,7 +7,7 @@ import allure
 def setup_browser():
     with allure.step("Setting up base page url"):
         browser.config.base_url = "https://github.com"
-    with allure.step("Setting up browser"):
+    with allure.step("Selecting Firefox for browser"):
         browser.config.driver_name = "firefox"
     with allure.step("Setting up timeout for browser"):
         browser.config.timeout = 8
